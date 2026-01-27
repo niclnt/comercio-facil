@@ -80,9 +80,10 @@ class ExcelParser:
         
         return mapa
 
-# --- BLOQUE DE PRUEBA (Para que lo corras ahora) ---
+# --- BLOQUE DE PRUEBA  ---
 if __name__ == "__main__":
-    # Crea un Excel de prueba rapidito llamado 'prueba.xlsx' con columnas: SKU, Detalle, Precio
-    parser = ExcelParser()
-    # ruta = "ruta/a/tu/excel_de_prueba.xlsx" (Descomenta y pon una ruta real para probar)
-    # print(parser.leer_archivo(ruta))
+   
+     parser = ExcelParser()
+     ruta = r"C:/Users/Nicolas/Desktop/comercio-facil/src/Book.xlsx" 
+     resultado = parser.leer_archivo(ruta)
+     print(resultado)
